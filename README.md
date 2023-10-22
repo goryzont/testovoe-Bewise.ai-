@@ -1,15 +1,15 @@
 # testovoe-Bewise.ai-
+Открываем консоль
 
-Пропишите в консоле 
+Пропишим в консоле 
   mkdir /home/db
   
 (если потребует права superuser)
   sudo mkdir /home/db
 
-Переходим в папку и с проектом 
-Открываем в ней консоль
+Переходим в папку и с проектом через консоль
 
-Вводим для создания docker- compose
+Вводим  для создания docker- compose
   docker-compose -f docker-compose.yml up -d
 
  Переходим на localhost:8000/docs
