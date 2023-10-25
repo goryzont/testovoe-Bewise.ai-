@@ -15,7 +15,6 @@ router = APIRouter(
 
 @router.post("/")
 async def add_question(quantity_questions: int, session: AsyncSession = Depends(get_async_session)) -> Question:
-    quantity_questions = quantity_questions
     url = f"https://jservice.io/api/random?count={quantity_questions}"
     data = get(url).json()
     questions = [Question(id_question=quest["id"],
